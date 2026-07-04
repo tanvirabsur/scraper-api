@@ -32,7 +32,7 @@ export const scrapeBusinesses = async (
       waitUntil: "domcontentloaded",
     });
 
-    await page.fill("#searchboxinput", query);
+    await page.fill("id=ucc-1", query);
 
     await page.keyboard.press("Enter");
 
